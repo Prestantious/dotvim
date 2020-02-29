@@ -15,6 +15,13 @@ set shiftround
 set expandtab
 
 
+" set-up pathogen, this will help manage plugins and runtime file for vim
+" this allows you to keep the files for each plugin together
+" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
+call pathogen#infect()
+call pathogen#helptags()
+
+
 " vim-latex-live-preview settings
 autocmd Filetype tex setl updatetime=1
 let g:livepreview_previewer = 'open -a Preview'
